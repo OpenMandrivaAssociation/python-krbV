@@ -33,3 +33,13 @@ export CFLAGS="%{optflags} -Wextra"
 %files
 %doc README COPYING krbV-code-snippets.py
 %{python_sitearch}/krbVmodule.so
+
+
+%changelog
+* Wed Aug 29 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0.90-1
++ Revision: 816013
+- Update previous package import.
+
+  + Antoine Ginies <aginies@mandriva.com>
+    - import python-krbV
+
