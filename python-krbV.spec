@@ -1,7 +1,7 @@
 
 Name: python-krbV
 Version: 1.0.90
-Release: 1
+Release: 2
 Summary: Python extension module for Kerberos 5
 
 Group: Development/Python
@@ -15,7 +15,8 @@ BuildRequires: krb5-devel
 BuildRequires: gawk
 
 %description
-python-krbV allows python programs to use Kerberos 5 authentication and security.
+python-krbV allows python programs to use Kerberos 5 authentication and
+security.
 
 %prep
 %setup -q
@@ -27,7 +28,6 @@ export CFLAGS="%{optflags} -Wextra"
 %{__make} %{?_smp_mflags}
 
 %install
-%{__rm} -rf %{buildroot}
 %makeinstall
 
 %files
