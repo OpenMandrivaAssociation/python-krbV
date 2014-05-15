@@ -1,8 +1,8 @@
-
 Name: python-krbV
 Version: 1.0.90
 Release: 2
 Summary: Python extension module for Kerberos 5
+
 
 Group: Development/Python
 License: LGPLv2+
@@ -10,7 +10,7 @@ License: LGPLv2+
 URL: http://fedorahosted.org/python-krbV/
 Source: http://fedorahosted.org/python-krbV/attachment/wiki/Releases/python-krbV-%{version}.tar.bz2
 
-%py_requires -d
+BuildRequires:  python-devel
 BuildRequires: krb5-devel
 BuildRequires: gawk
 
@@ -25,21 +25,13 @@ security.
 export LIBNAME="%{_lib}"
 export CFLAGS="%{optflags} -Wextra"
 %configure2_5x
-%{__make} %{?_smp_mflags}
+%make
 
 %install
 %makeinstall
 
 %files
 %doc README COPYING krbV-code-snippets.py
-%{python_sitearch}/krbVmodule.so
+%{py_platsitedir}/krbVmodule.so
 
-
-%changelog
-* Wed Aug 29 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0.90-1
-+ Revision: 816013
-- Update previous package import.
-
-  + Antoine Ginies <aginies@mandriva.com>
-    - import python-krbV
 
