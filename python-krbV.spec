@@ -1,6 +1,6 @@
 Name: python-krbV
 Version: 1.0.90
-Release: 2
+Release: 3
 Summary: Python extension module for Kerberos 5
 
 
