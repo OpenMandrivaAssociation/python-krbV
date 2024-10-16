@@ -7,7 +7,7 @@ Summary: Python extension module for Kerberos 5
 Group: Development/Python
 License: LGPLv2+
 
-URL: http://fedorahosted.org/python-krbV/
+URL: https://fedorahosted.org/python-krbV/
 Source: http://fedorahosted.org/python-krbV/attachment/wiki/Releases/python-krbV-%{version}.tar.bz2
 
 BuildRequires:  python-devel
