@@ -10,6 +10,11 @@ License: LGPLv2+
 URL: https://fedorahosted.org/python-krbV/
 Source: http://fedorahosted.org/python-krbV/attachment/wiki/Releases/python-krbV-%{version}.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  python-devel
 BuildRequires: krb5-devel
 BuildRequires: gawk
